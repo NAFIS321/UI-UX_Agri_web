@@ -1,0 +1,43 @@
+        /**/
+        .navbar-logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    /*title*/
+    .light-green {
+      background-color: #66BB6A;
+    }
+    /* index.html */
+    .hero-section {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                  url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: #fff;
+      padding: 100px 0;
+    }
+    .feature-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+    }
+
+    
+    /* guides.html */
+    .guide-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .guide-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.12) !important;
+    }
+    /* crops.html */
+    .crop-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .crop-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.12) !important;
+    }

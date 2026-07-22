@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+<!-- navbar section start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow-sm">
+    <div class="container">
+      
+      
+      <img src="images/logo.png" alt="logo" class="rounded-circle me-2" width="45" height="45">
+     
+      <a class="navbar-brand fw-bold" href="index.html">
+        <i class="bi bi-tree-fill me-2"></i>AgriHub
+      </a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fs-6">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="guides.html">Farming Guides</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="crops.html">Crop Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pest-control.html">Pest Control</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-light ms-lg-2 text-white px-3" href="contact.html">Contact Experts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- navbar section end -->
+
+<!-- Page Header -->
+  <section class="light-green text-white py-5 text-center">
+    <div class="container">
+      <h1 class="fw-bold display-5">Crop Information Library</h1>
+      <p class="lead mb-0">Explore detailed crop profiles, soil specifications, nutritional facts, and harvesting methods[cite: 1].</p>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="container my-5 flex-grow-1">
+
+    <!-- Category Filter Tabs -->
+    <ul class="nav nav-pills justify-content-center mb-5" id="cropCategoryTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active fw-semibold me-2 mb-2" id="all-tab" data-bs-toggle="pill" data-bs-target="#all-crops" type="button" role="tab">All Crops</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link fw-semibold me-2 mb-2" id="grains-tab" data-bs-toggle="pill" data-bs-target="#grains" type="button" role="tab">Grains & Cereals</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link fw-semibold me-2 mb-2" id="fruits-tab" data-bs-toggle="pill" data-bs-target="#fruits" type="button" role="tab">Fruits</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link fw-semibold me-2 mb-2" id="vegetables-tab" data-bs-toggle="pill" data-bs-target="#vegetables" type="button" role="tab">Vegetables</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link fw-semibold me-2 mb-2" id="cash-tab" data-bs-toggle="pill" data-bs-target="#cash" type="button" role="tab">Cash Crops</button>
+      </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content" id="cropTabContent">
+      
+      <!-- Tab 1: All Crops Grid -->
+      <div class="tab-pane fade show active" id="all-crops" role="tabpanel">
+        <div class="row g-4">
+
+          <!-- Crop 1: Rice (Grains) -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100 border-0 shadow-sm crop-card">
+              <img 
+                src="https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?auto=format&fit=crop&w=600&q=80" 
+                class="card-img-top" 
+                alt="Rice Paddy"
+                style="height: 180px; object-fit: cover;"
+              />
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-success-subtle text-success w-auto align-self-start mb-2">Grain</span>
+                <h5 class="card-title fw-bold mb-1">Rice (Oryza sativa)</h5>
+                <p class="card-text text-secondary small mb-3">
+                  <strong>Varieties:</strong> Basmati, Indica, Jasmine, Japonica[cite: 1].
+                </p>
+                <div class="mt-auto">
+                  <button class="btn btn-outline-success btn-sm w-100" data-bs-toggle="modal" data-bs-target="#cropModalRice">
+                    View Full Profile &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Crop 2: Tomato (Vegetables) -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100 border-0 shadow-sm crop-card">
+              <img 
+                src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=600&q=80" 
+                class="card-img-top" 
+                alt="Ripe Tomatoes"
+                style="height: 180px; object-fit: cover;"
+              />
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-danger-subtle text-danger w-auto align-self-start mb-2">Vegetable</span>
+                <h5 class="card-title fw-bold mb-1">Tomato (Solanum lycopersicum)</h5>
+                <p class="card-text text-secondary small mb-3">
+                  <strong>Varieties:</strong> Roma, Cherry, Beefsteak, Heirloom[cite: 1].
+                </p>
+                <div class="mt-auto">
+                  <button class="btn btn-outline-success btn-sm w-100" data-bs-toggle="modal" data-bs-target="#cropModalTomato">
+                    View Full Profile &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Crop 3: Mango (Fruits) -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100 border-0 shadow-sm crop-card">
+              <img 
+                src="https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=600&q=80" 
+                class="card-img-top" 
+                alt="Fresh Mangoes"
+                style="height: 180px; object-fit: cover;"
+              />
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-warning-subtle text-dark w-auto align-self-start mb-2">Fruit</span>
+                <h5 class="card-title fw-bold mb-1">Mango (Mangifera indica)</h5>
+                <p class="card-text text-secondary small mb-3">
+                  <strong>Varieties:</strong> Alphonso, Haden, Tommy Atkins, Kent[cite: 1].
+                </p>
+                <div class="mt-auto">
+                  <button class="btn btn-outline-success btn-sm w-100" data-bs-toggle="modal" data-bs-target="#cropModalMango">
+                    View Full Profile &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Crop 4: Cotton (Cash Crops) -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100 border-0 shadow-sm crop-card">
+              <img 
+                src="https://images.unsplash.com/photo-1608686207856-001b95cf60ca?auto=format&fit=crop&w=600&q=80" 
+                class="card-img-top" 
+                alt="Cotton Field"
+                style="height: 180px; object-fit: cover;"
+              />
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-primary-subtle text-primary w-auto align-self-start mb-2">Cash Crop</span>
+                <h5 class="card-title fw-bold mb-1">Cotton (Gossypium)</h5>
+                <p class="card-text text-secondary small mb-3">
+                  <strong>Varieties:</strong> Upland, Pima, Egyptian Long-Staple[cite: 1].
+                </p>
+                <div class="mt-auto">
+                  <button class="btn btn-outline-success btn-sm w-100" data-bs-toggle="modal" data-bs-target="#cropModalCotton">
+                    View Full Profile &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Detailed Crop Profile Modal: Rice -->
+  <div class="modal fade" id="cropModalRice" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title fw-bold">Crop Profile: Rice (Oryza sativa)</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="row align-items-center mb-4">
+            <div class="col-md-5">
+              <img 
+                src="https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?auto=format&fit=crop&w=600&q=80" 
+                class="img-fluid rounded shadow-sm" 
+                alt="Rice Crop"
+              />
+            </div>
+            <div class="col-md-7">
+              <h6 class="fw-bold text-success">Key Characteristics</h6>
+              <ul class="list-unstyled small text-secondary">
+                <li><strong>Category:</strong> Grains & Cereals[cite: 1]</li>
+                <li><strong>Major Varieties:</strong> Basmati, Jasmine, Indica, Japonica[cite: 1]</li>
+                <li><strong>Ideal Soil Type:</strong> Clay or clay-loam with high water holding capacity[cite: 1]</li>
+                <li><strong>Soil pH Range:</strong> 5.5 to 6.5[cite: 1]</li>
+              </ul>
+            </div>
+          </div>
+
+          <hr class="my-3" />
+
+          <!-- Profile Details Accordion -->
+          <div class="accordion" id="riceAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold text-success" type="button" data-bs-toggle="collapse" data-bs-target="#riceCultivation">
+                  Cultivation Methods & Soil Requirements
+                </button>
+              </h2>
+              <div id="riceCultivation" class="accordion-collapse collapse show" data-bs-parent="#riceAccordion">
+                <div class="accordion-body small text-secondary">
+                  Transplanted puddled conditions are standard for lowland rice[cite: 1]. Requires warm temperature (20°C–35°C) and flooded field conditions during early tillering stages[cite: 1].
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold text-success" type="button" data-bs-toggle="collapse" data-bs-target="#riceNutrition">
+                  Nutritional Values (per 100g cooked)
+                </button>
+              </h2>
+              <div id="riceNutrition" class="accordion-collapse collapse" data-bs-parent="#riceAccordion">
+                <div class="accordion-body small text-secondary">
+                  <table class="table table-sm table-bordered mb-0">
+                    <thead><tr><th>Carbohydrates</th><th>Protein</th><th>Fat</th><th>Energy</th></tr></thead>
+                    <tbody><tr><td>28 g</td><td>2.7 g</td><td>0.3 g</td><td>130 kcal</td></tr></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold text-success" type="button" data-bs-toggle="collapse" data-bs-target="#riceHarvest">
+                  Harvesting Techniques & Potential Uses
+                </button>
+              </h2>
+              <div id="riceHarvest" class="accordion-collapse collapse" data-bs-parent="#riceAccordion">
+                <div class="accordion-body small text-secondary">
+                  Harvest when 80-85% of grains turn straw yellow[cite: 1]. Thresh, dry to 12-14% moisture[cite: 1]. Used for direct food consumption, flour, rice bran oil, and animal fodder[cite: 1].
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detailed Crop Profile Modal: Tomato -->
+  <div class="modal fade" id="cropModalTomato" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title fw-bold">Crop Profile: Tomato (Solanum lycopersicum)</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="row align-items-center mb-4">
+            <div class="col-md-5">
+              <img 
+                src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=600&q=80" 
+                class="img-fluid rounded shadow-sm" 
+                alt="Tomatoes"
+              />
+            </div>
+            <div class="col-md-7">
+              <h6 class="fw-bold text-danger">Key Characteristics</h6>
+              <ul class="list-unstyled small text-secondary">
+                <li><strong>Category:</strong> Vegetables[cite: 1]</li>
+                <li><strong>Major Varieties:</strong> Roma, Cherry, Beefsteak, Heirloom[cite: 1]</li>
+                <li><strong>Ideal Soil Type:</strong> Well-drained sandy loam rich in organic matter[cite: 1]</li>
+                <li><strong>Soil pH Range:</strong> 6.0 to 6.8[cite: 1]</li>
+              </ul>
+            </div>
+          </div>
+
+          <hr class="my-3" />
+
+          <!-- Profile Details Accordion -->
+          <div class="accordion" id="tomatoAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#tomatoCultivation">
+                  Cultivation Methods & Soil Requirements
+                </button>
+              </h2>
+              <div id="tomatoCultivation" class="accordion-collapse collapse show" data-bs-parent="#tomatoAccordion">
+                <div class="accordion-body small text-secondary">
+                  Raised-bed planting with staking or trellising is recommended for indeterminate varieties[cite: 1]. Requires consistent drip irrigation to avoid blossom end rot[cite: 1].
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#tomatoNutrition">
+                  Nutritional Values (per 100g raw)
+                </button>
+              </h2>
+              <div id="tomatoNutrition" class="accordion-collapse collapse" data-bs-parent="#tomatoAccordion">
+                <div class="accordion-body small text-secondary">
+                  <table class="table table-sm table-bordered mb-0">
+                    <thead><tr><th>Vitamin C</th><th>Lycopene</th><th>Fiber</th><th>Energy</th></tr></thead>
+                    <tbody><tr><td>13.7 mg</td><td>2573 µg</td><td>1.2 g</td><td>18 kcal</td></tr></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#tomatoHarvest">
+                  Harvesting Techniques & Potential Uses
+                </button>
+              </h2>
+              <div id="tomatoHarvest" class="accordion-collapse collapse" data-bs-parent="#tomatoAccordion">
+                <div class="accordion-body small text-secondary">
+                  Pick when fruit reaches firm, full red stage for fresh market, or breaker stage for long-distance transport[cite: 1]. Used fresh, in sauces, pastes, and juices[cite: 1].
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detailed Crop Profile Modal: Mango -->
+  <div class="modal fade" id="cropModalMango" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header bg-warning text-dark">
+          <h5 class="modal-title fw-bold">Crop Profile: Mango (Mangifera indica)</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="row align-items-center mb-4">
+            <div class="col-md-5">
+              <img 
+                src="https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=600&q=80" 
+                class="img-fluid rounded shadow-sm" 
+                alt="Mangoes"
+              />
+            </div>
+            <div class="col-md-7">
+              <h6 class="fw-bold text-warning-emphasis">Key Characteristics</h6>
+              <ul class="list-unstyled small text-secondary">
+                <li><strong>Category:</strong> Fruits[cite: 1]</li>
+                <li><strong>Major Varieties:</strong> Alphonso, Haden, Tommy Atkins, Kent[cite: 1]</li>
+                <li><strong>Ideal Soil Type:</strong> Deep, well-drained alluvial or sandy loam[cite: 1]</li>
+                <li><strong>Soil pH Range:</strong> 5.5 to 7.5[cite: 1]</li>
+              </ul>
+            </div>
+          </div>
+
+          <hr class="my-3" />
+
+          <!-- Profile Details Accordion -->
+          <div class="accordion" id="mangoAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold text-warning-emphasis" type="button" data-bs-toggle="collapse" data-bs-target="#mangoCultivation">
+                  Cultivation Methods & Soil Requirements
+                </button>
+              </h2>
+              <div id="mangoCultivation" class="accordion-collapse collapse show" data-bs-parent="#mangoAccordion">
+                <div class="accordion-body small text-secondary">
+                  Propagated through grafting (veneer or side grafting)[cite: 1]. Planted at 10m x 10m spacing[cite: 1]. Requires clear dry weather during flowering stage[cite: 1].
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold text-warning-emphasis" type="button" data-bs-toggle="collapse" data-bs-target="#mangoNutrition">
+                  Nutritional Values (per 100g raw)
+                </button>
+              </h2>
+              <div id="mangoNutrition" class="accordion-collapse collapse" data-bs-parent="#mangoAccordion">
+                <div class="accordion-body small text-secondary">
+                  <table class="table table-sm table-bordered mb-0">
+                    <thead><tr><th>Vitamin A</th><th>Vitamin C</th><th>Sugars</th><th>Energy</th></tr></thead>
+                    <tbody><tr><td>1082 IU</td><td>36.4 mg</td><td>13.7 g</td><td>60 kcal</td></tr></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold text-warning-emphasis" type="button" data-bs-toggle="collapse" data-bs-target="#mangoHarvest">
+                  Harvesting Techniques & Potential Uses
+                </button>
+              </h2>
+              <div id="mangoHarvest" class="accordion-collapse collapse" data-bs-parent="#mangoAccordion">
+                <div class="accordion-body small text-secondary">
+                  Harvest manually using fruit pickers with pedicel intact to avoid latex staining[cite: 1]. Used fresh, in purées, juices, pickles, and dried snacks[cite: 1].
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detailed Crop Profile Modal: Cotton -->
+  <div class="modal fade" id="cropModalCotton" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title fw-bold">Crop Profile: Cotton (Gossypium)</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="row align-items-center mb-4">
+            <div class="col-md-5">
+              <img 
+                src="https://images.unsplash.com/photo-1608686207856-001b95cf60ca?auto=format&fit=crop&w=600&q=80" 
+                class="img-fluid rounded shadow-sm" 
+                alt="Cotton"
+              />
+            </div>
+            <div class="col-md-7">
+              <h6 class="fw-bold text-primary">Key Characteristics</h6>
+              <ul class="list-unstyled small text-secondary">
+                <li><strong>Category:</strong> Cash Crops[cite: 1]</li>
+                <li><strong>Major Varieties:</strong> Upland, Pima, Egyptian Long-Staple[cite: 1]</li>
+                <li><strong>Ideal Soil Type:</strong> Deep black cotton soil or well-drained clay loam[cite: 1]</li>
+                <li><strong>Soil pH Range:</strong> 6.0 to 8.0[cite: 1]</li>
+              </ul>
+            </div>
+          </div>
+
+          <hr class="my-3" />
+
+          <!-- Profile Details Accordion -->
+          <div class="accordion" id="cottonAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#cottonCultivation">
+                  Cultivation Methods & Soil Requirements
+                </button>
+              </h2>
+              <div id="cottonCultivation" class="accordion-collapse collapse show" data-bs-parent="#cottonAccordion">
+                <div class="accordion-body small text-secondary">
+                  Sown in rows at 60–90 cm spacing[cite: 1]. Requires a long frost-free period, high sunshine hours, and moderate rainfall[cite: 1].
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#cottonNutrition">
+                  Commercial Fiber & Seed Profile
+                </button>
+              </h2>
+              <div id="cottonNutrition" class="accordion-collapse collapse" data-bs-parent="#cottonAccordion">
+                <div class="accordion-body small text-secondary">
+                  <table class="table table-sm table-bordered mb-0">
+                    <thead><tr><th>Lint Percentage</th><th>Seed Oil Content</th><th>Cellulose Content</th></tr></thead>
+                    <tbody><tr><td>33–40%</td><td>15–25%</td><td>~90%</td></tr></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#cottonHarvest">
+                  Harvesting Techniques & Potential Uses
+                </button>
+              </h2>
+              <div id="cottonHarvest" class="accordion-collapse collapse" data-bs-parent="#cottonAccordion">
+                <div class="accordion-body small text-secondary">
+                  Harvest manually or mechanically when bolls open fully[cite: 1]. Primary source of textile fiber; seeds processed for cottonseed oil and meal[cite: 1].
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- footer section start  -->
+<footer class="bg-dark text-white py-4 mt-auto">
+    <div class="container text-center text-md-start">
+      <div class="row gy-3">
+        <div class="col-md-6">
+          <h5 class="fw-bold text-success">Agricultural Information Hub</h5>
+          <p class="small text-secondary mb-0">Dedicated to supporting sustainable agriculture and farm productivity[cite: 1].</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="small text-secondary mb-1">Need help? Contact Agricultural Extension Services[cite: 1].</p>
+          <a href="contact.html" class="text-success text-decoration-none small">Reach an Expert &rarr;</a>
+        </div>
+      </div>
+      <hr class="border-secondary my-3" />
+      <div class="text-center small text-secondary">
+        &copy; 2026 Agricultural Information Hub. All rights reserved[cite: 1].
+      </div>
+    </div>
+</footer>
+<!-- footer section start  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

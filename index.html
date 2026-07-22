@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+<!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow-sm">
+    <div class="container">
+      <img src="images/logo.png"  alt="Home logo"  class="rounded-circle me-2 " width="45" height="45" >
+      <a class="navbar-brand fw-bold" href="index.html">
+        <i class="bi bi-tree-fill me-2"></i>AgriHub
+      </a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fs-6">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="guides.html">Farming Guides</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="crops.html">Crop Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pest-control.html">Pest Control</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-light ms-lg-2 text-white px-3" href="contact.html">Contact Experts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="hero-section text-white py-5 text-center">
+    <div class="container py-4 py-md-5">
+      <span class="badge bg-light text-success fw-bold px-3 py-2 rounded-pill mb-3">
+        🌱 Sustainable Agriculture & Knowledge Exchange
+      </span>
+      <h1 class="fw-bold display-4 mb-3">Empowering Farmers with Modern Knowledge</h1>
+      <p class="lead text-white-50 mx-auto mb-4 style-max-width" style="max-width: 750px;">
+        Access actionable cultivation guides, integrated pest management techniques, and direct support from agricultural extension services.
+      </p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="guides.html" class="btn btn-light text-success btn-lg fw-bold px-4">
+          <i class="bi bi-book me-2"></i>Explore Farming Guides
+        </a>
+        <a href="contact.html" class="btn btn-outline-light btn-lg fw-semibold px-4">
+          <i class="bi bi-person-lines-fill me-2"></i>Consult an Expert
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Statistics Strip -->
+  <section class="bg-white py-4 shadow-sm border-bottom">
+    <div class="container">
+      <div class="row text-center gy-3">
+        <div class="col-6 col-md-3">
+          <div class="fw-bold fs-3 text-success">50+</div>
+          <div class="small text-secondary">Crop Guides & Catalog</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="fw-bold fs-3 text-success">100%</div>
+          <div class="small text-secondary">Eco-Friendly IPM Methods</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="fw-bold fs-3 text-success">24/7</div>
+          <div class="small text-secondary">Extension Support Access</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="fw-bold fs-3 text-success">10k+</div>
+          <div class="small text-secondary">Farmers Empowered</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="container my-5 flex-grow-1">
+
+    <!-- Section Title -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-success">Core Portal Services</h2>
+      <p class="text-secondary">Everything you need to optimize yield, protect crops, and practice sustainable farming.</p>
+    </div>
+
+    <!-- 4 Pillar Cards Grid -->
+    <div class="row g-4 mb-5">
+      <!-- Card 1: Farming Guides -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm feature-card">
+          <div class="card-body p-4 text-center d-flex flex-column">
+            <div class="bg-success-subtle text-success rounded-circle d-inline-flex p-3 mx-auto mb-3">
+              <i class="bi bi-journal-text fs-2"></i>
+            </div>
+            <h5 class="card-title fw-bold">Farming Guides</h5>
+            <p class="card-text text-secondary small mb-4 flex-grow-1">
+              Step-by-step practices for soil preparation, planting, irrigation, and harvesting.
+            </p>
+            <a href="guides.html" class="btn btn-outline-success btn-sm fw-semibold">View Guides &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Crop Details -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm feature-card">
+          <div class="card-body p-4 text-center d-flex flex-column">
+            <div class="bg-primary-subtle text-primary rounded-circle d-inline-flex p-3 mx-auto mb-3">
+              <i class="bi bi-flower1 fs-2"></i>
+            </div>
+            <h5 class="card-title fw-bold">Crop Database</h5>
+            <p class="card-text text-secondary small mb-4 flex-grow-1">
+              Detailed profiles on cereal, vegetable, and cash crops, including growth requirements.
+            </p>
+            <a href="crops.html" class="btn btn-outline-primary btn-sm fw-semibold">Explore Crops &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Pest Control -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm feature-card">
+          <div class="card-body p-4 text-center d-flex flex-column">
+            <div class="bg-warning-subtle text-dark rounded-circle d-inline-flex p-3 mx-auto mb-3">
+              <i class="bi bi-bug fs-2"></i>
+            </div>
+            <h5 class="card-title fw-bold">Pest Control</h5>
+            <p class="card-text text-secondary small mb-4 flex-grow-1">
+              Integrated Pest Management (IPM), early detection tips, and biological remedies.
+            </p>
+            <a href="pest-control.html" class="btn btn-outline-warning text-dark btn-sm fw-semibold">Pest Management &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Contact Experts -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm feature-card">
+          <div class="card-body p-4 text-center d-flex flex-column">
+            <div class="bg-danger-subtle text-danger rounded-circle d-inline-flex p-3 mx-auto mb-3">
+              <i class="bi bi-headset fs-2"></i>
+            </div>
+            <h5 class="card-title fw-bold">Expert Support</h5>
+            <p class="card-text text-secondary small mb-4 flex-grow-1">
+              Get in touch with local agricultural extension officers for customized advice.
+            </p>
+            <a href="contact.html" class="btn btn-outline-danger btn-sm fw-semibold">Get Support &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Farming Advice Banner -->
+    <div class="card border-0 bg-success text-white p-4 p-md-5 rounded-4 shadow-sm">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-8">
+          <h3 class="fw-bold mb-2"><i class="bi bi-lightbulb me-2"></i>Seasonal Advisory: Pest Prevention</h3>
+          <p class="mb-0 text-white-50">
+            Early scouting and weekly leaf inspections can prevent up to 80% of crop losses caused by seasonal insect invasions. Read our biological control remedies today.
+          </p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a href="pest-control.html" class="btn btn-light text-success fw-bold btn-lg">
+            Read IPM Strategies
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 mt-auto">
+    <div class="container text-center text-md-start">
+      <div class="row gy-3">
+        <div class="col-md-6">
+          <h5 class="fw-bold text-success">Agricultural Information Hub</h5>
+          <p class="small text-secondary mb-0">Dedicated to supporting sustainable agriculture and farm productivity.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="small text-secondary mb-1">Need help? Contact Agricultural Extension Services.</p>
+          <a href="contact.html" class="text-success text-decoration-none small">Reach an Expert &rarr;</a>
+        </div>
+      </div>
+      <hr class="border-secondary my-3" />
+      <div class="text-center small text-secondary">
+        &copy; 2026 Agricultural Information Hub. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

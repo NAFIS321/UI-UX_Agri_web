@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+<!-- navbar section start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow-sm">
+    <div class="container">
+      <img src="images/logo.png" alt="Home logo" class="rounded-circle me-2" width="45" height="45">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <i class="bi bi-tree-fill me-2"></i>AgriHub
+      </a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fs-6">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="guides.html">Farming Guides</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="crops.html">Crop Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pest-control.html">Pest Control</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-light ms-lg-2 text-white px-3" href="contact.html">Contact Experts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- navbar section end -->
+
+<!-- Page Header -->
+  <section class="light-green text-white py-5 text-center">
+    <div class="container">
+      <h1 class="fw-bold display-5">Integrated Pest Management (IPM)</h1>
+      <p class="lead mb-0">Sustainable pest monitoring, biological controls, and organic remedies for healthy crop yields[cite: 1].</p>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="container my-5 flex-grow-1">
+
+    <!-- IPM Pillars Section -->
+    <div class="mb-5">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold text-success">Core IPM Control Pillars</h2>
+        <p class="text-secondary">Combine multiple management practices to control pest populations safely[cite: 1].</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Biological Controls -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm ipm-card">
+            <div class="card-body p-4 text-center">
+              <div class="bg-success-subtle text-success rounded-circle d-inline-flex p-3 mb-3">
+                <i class="bi bi-bug fs-2"></i>
+              </div>
+              <h4 class="card-title fw-bold">Biological Controls</h4>
+              <p class="card-text text-secondary small">
+                Introduce natural predators (ladybugs, parasitic wasps, lacewings) and beneficial microbes to keep pest populations in check[cite: 1].
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Physical & Mechanical Controls -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm ipm-card">
+            <div class="card-body p-4 text-center">
+              <div class="bg-primary-subtle text-primary rounded-circle d-inline-flex p-3 mb-3">
+                <i class="bi bi-shield-check fs-2"></i>
+              </div>
+              <h4 class="card-title fw-bold">Physical Barriers</h4>
+              <p class="card-text text-secondary small">
+                Use insect netting, sticky traps, mulching, and soil solarization to physically prevent pests from reaching crops[cite: 1].
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Organic Remedies -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm ipm-card">
+            <div class="card-body p-4 text-center">
+              <div class="bg-warning-subtle text-dark rounded-circle d-inline-flex p-3 mb-3">
+                <i class="bi bi-droplet-half fs-2"></i>
+              </div>
+              <h4 class="card-title fw-bold">Organic Remedies</h4>
+              <p class="card-text text-secondary small">
+                Apply eco-friendly sprays such as neem oil, insecticidal soaps, and horticultural oils that minimize environmental impact[cite: 1].
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Monitoring & Early Detection Section -->
+    <div class="card border-0 shadow-sm mb-5">
+      <div class="card-body p-4 p-md-5">
+        <h3 class="fw-bold text-success mb-3">
+          <i class="bi bi-search me-2"></i>Early Detection & Crop Monitoring Tips
+        </h3>
+        <p class="text-secondary mb-4">
+          Early detection is critical to stopping pest outbreaks before they cause severe economic damage[cite: 1].
+        </p>
+
+        <div class="accordion" id="monitoringAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button fw-bold text-success" type="button" data-bs-toggle="collapse" data-bs-target="#scouting">
+                1. Field Scouting Protocol
+              </button>
+            </h2>
+            <div id="scouting" class="accordion-collapse collapse show" data-bs-parent="#monitoringAccordion">
+              <div class="accordion-body small text-secondary">
+                Inspect crops at least twice a week during active growing seasons[cite: 1]. Check leaf undersides, stem joints, and soil lines for eggs, larvae, or feeding damage[cite: 1].
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-bold text-success" type="button" data-bs-toggle="collapse" data-bs-target="#trapping">
+                2. Pheromone & Yellow Sticky Traps
+              </button>
+            </h2>
+            <div id="trapping" class="accordion-collapse collapse" data-bs-parent="#monitoringAccordion">
+              <div class="accordion-body small text-secondary">
+                Hang yellow sticky traps at crop height to track airborne insects like whiteflies and aphids[cite: 1]. Use pheromone traps to monitor adult moth activity[cite: 1].
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-bold text-success" type="button" data-bs-toggle="collapse" data-bs-target="#thresholds">
+                3. Establishing Action Thresholds
+              </button>
+            </h2>
+            <div id="thresholds" class="accordion-collapse collapse" data-bs-parent="#monitoringAccordion">
+              <div class="accordion-body small text-secondary">
+                Do not spray at the sight of a single insect[cite: 1]. Apply remedies only when pest population levels exceed economic threshold limits[cite: 1].
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Common Pests & Treatment Database Table -->
+    <div class="card border-0 shadow-sm">
+      <div class="card-body p-4">
+        <h3 class="fw-bold text-success mb-3">Common Pests & Treatment Matrix</h3>
+        <p class="text-secondary small mb-4">Reference guide for identifying pest symptoms and applying targeted treatments[cite: 1].</p>
+
+        <div class="table-responsive">
+          <table class="table table-hover align-middle">
+            <thead class="table-success">
+              <tr>
+                <th>Pest Name</th>
+                <th>Target Crops</th>
+                <th>Symptoms / Damage</th>
+                <th>Recommended Remedy</th>
+              </tr>
+            </thead>
+            <tbody class="small text-secondary">
+              <tr>
+                <td class="fw-bold text-dark">Aphids</td>
+                <td>Vegetables, Fruits, Cereals</td>
+                <td>Curled leaves, sticky honeydew buildup, stunted growth</td>
+                <td>Neem oil spray, introducing Ladybugs (biological)</td>
+              </tr>
+              <tr>
+                <td class="fw-bold text-dark">Fall Armyworm</td>
+                <td>Maize, Wheat, Rice</td>
+                <td>Large ragged holes in leaves, sawdust-like frass on whorls</td>
+                <td><em>Bacillus thuringiensis</em> (Bt) spray, pheromone trapping</td>
+              </tr>
+              <tr>
+                <td class="fw-bold text-dark">Whiteflies</td>
+                <td>Tomato, Cotton, Beans</td>
+                <td>Yellowing leaves, transmission of viral plant diseases</td>
+                <td>Yellow sticky traps, insecticidal soaps</td>
+              </tr>
+              <tr>
+                <td class="fw-bold text-dark">Spider Mites</td>
+                <td>Fruits, Vegetables, Ornamentals</td>
+                <td>Fine webbing under leaves, yellow stippling on leaf surface</td>
+                <td>Predatory mites (<em>Phytoseiulus</em>), overhead water washing</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+<!-- footer section start  -->
+<footer class="bg-dark text-white py-4 mt-auto">
+    <div class="container text-center text-md-start">
+      <div class="row gy-3">
+        <div class="col-md-6">
+          <h5 class="fw-bold text-success">Agricultural Information Hub</h5>
+          <p class="small text-secondary mb-0">Dedicated to supporting sustainable agriculture and farm productivity[cite: 1].</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="small text-secondary mb-1">Need help? Contact Agricultural Extension Services[cite: 1].</p>
+          <a href="contact.html" class="text-success text-decoration-none small">Reach an Expert &rarr;</a>
+        </div>
+      </div>
+      <hr class="border-secondary my-3" />
+      <div class="text-center small text-secondary">
+        &copy; 2026 Agricultural Information Hub. All rights reserved[cite: 1].
+      </div>
+    </div>
+</footer>
+<!-- footer section start  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
