@@ -1,4 +1,3 @@
-Here is a comprehensive `README.md` file tailored specifically for your **Agricultural Information Hub** web project. You can paste this directly into the root directory of your repository.
 
 ---
 
